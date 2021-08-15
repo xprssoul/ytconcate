@@ -36,7 +36,7 @@ class GetVideoList(Step):
                 break
 
         print(len(video_links))
-        self.write_to_file(utils.get_video_list_filepath(channel_id))
+        self.write_to_file(video_links, utils.get_video_list_filepath(channel_id))
         return video_links
 
     def write_to_file(self, video_links, filepath):
